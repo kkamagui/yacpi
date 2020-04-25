@@ -1,0 +1,51 @@
+.TH  YACPI "1" "User Commands"
+.SH NAME
+YACPI \- Yet Another Configuration and Power Interface
+.SH SYNOPSIS
+.B yacpi
+[\fIOPTION\fR]
+.SH DESCRIPTION
+Yacpi is an acpi monitoring tool for Linux.
+It displays various acpi information like battery status, ac status and temperature.
+This information will be displayed in a user-friendly ncurses interface or as plain-text.
+It is also able to display current cpu frequency and the kernel scaling governor.
+.SH OPTIONS
+.TP
+\-h display help
+.TP
+\-v display version number and release date
+.TP
+\-p display as plain-text only, useful for script output for example
+.TP
+\-l loop yacpi output every second.
+.TP
+\-n display not found items (display everything you can)
+.TP
+\-d specify delay seconds for loop
+.TP
+.TP
+\-b show battery information
+.TP
+\-a show ac adapter information
+.TP
+\-f show fan information
+.TP
+\-t show thermal zone information
+.TP
+\-c show cpu frequency
+.TP
+\-g show used frequency governor
+.TP
+The default prints all available information.
+.SH KEYS
+.TP
+q \- quit yacpi
+.TP
+r \- reload acpi information
+.TP
+h \- print help screen
+.SH REPORTING BUGS
+.TP
+ACPI information is platform and system depended so please include as much information you can gather about your system like contents of /proc/acpi files, strace output or backtraces/core files.
+.SH AUTHOR CONTACT 
+Yacpi was written by Nico Golde <nico@ngolde.de>

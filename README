@@ -1,0 +1,36 @@
+README for yacpi-3.0.1
+====================
+Homepage: http://www.ngolde.de/yacpi.html
+-----------------------------------------
+
+yacpi - Yet Another Configuration and Power Interface
+
+== Introduction ==
+yacpi gathers information provided by the libacpi and displays them
+in a user-friendly ncurses interface or in normal text mode.
+It will display information about batteries, fans, thermal zones, ac status
+and some information about cpu.
+
+== Dependencies ==
+yacpi depends on the following libraries:
+
+- libacpi : http://www.ngolde.de/libacpi.html
+- ncurses5: www.gnu.org/software/ncurses/
+- libc6
+
+== Installation ==
+Compiling and installing yacpi is pretty straight forward:
+make
+make install
+
+== Contact ==
+Nico Golde <nico@ngolde.de>
+
+== Donation ==
+If you want to donate money or hardware (precedented) to support libacpi
+development, because it would make testing more easy if I would have the hardware,
+please also use this address to contact me.
+
+== License ==
+yacpi is licensed under version 2 of the GPL, see COPYING file for
+license details.
